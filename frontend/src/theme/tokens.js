@@ -1,0 +1,115 @@
+/**
+ * Design Tokens JavaScript Export for Material-UI Theme & Component Consumption
+ * Matches CSS Tokens generated per alirezarezvani-ui-design-system
+ */
+
+export const tokens = {
+  colors: {
+    primary: {
+      50: '#EEF4FC',
+      100: '#D8E7FA',
+      200: '#B3D2F5',
+      300: '#7EB4EE',
+      400: '#3E8DE2',
+      500: '#0D3B75', // Base Navy Brand
+      600: '#092B57',
+      700: '#072042',
+      800: '#051832',
+      900: '#030F20',
+      contrastText: '#FFFFFF',
+    },
+    secondary: {
+      50: '#EDFAF1',
+      100: '#D7F4E1',
+      200: '#B0E9C5',
+      300: '#78D99E',
+      400: '#3CC274',
+      500: '#16A34A', // Base Emerald Green
+      600: '#11813A',
+      700: '#0D632D',
+      800: '#0A4A22',
+      900: '#063116',
+      contrastText: '#FFFFFF',
+    },
+    accent: {
+      50: '#EFF8FF',
+      100: '#DFEFFE',
+      200: '#B9DFFD',
+      300: '#7CC4FA',
+      400: '#38A6F6',
+      500: '#0284C7', // Base Tech Cyan
+      600: '#026AA0',
+      700: '#02527C',
+      800: '#023D5C',
+      900: '#01283D',
+      contrastText: '#FFFFFF',
+    },
+    neutral: {
+      50: '#F8FAFC',
+      100: '#F1F5F9',
+      200: '#E2E8F0',
+      300: '#CBD5E1',
+      400: '#94A3B8',
+      500: '#64748B',
+      600: '#475569',
+      700: '#334155',
+      800: '#1E293B',
+      900: '#0F172A',
+      950: '#020617',
+    },
+    semantic: {
+      success: '#16A34A',
+      successBg: '#EDFAF1',
+      warning: '#D97706',
+      warningBg: '#FFFBEB',
+      error: '#DC2626',
+      errorBg: '#FEF2F2',
+      info: '#0284C7',
+      infoBg: '#EFF8FF',
+    },
+    surface: {
+      bg: '#F8FAFC',
+      card: '#FFFFFF',
+      subtle: '#F1F5F9',
+      darkNavy: '#0A192F',
+    },
+  },
+  spacing: {
+    0: 0,
+    1: 4,
+    2: 8,
+    3: 12,
+    4: 16,
+    5: 20,
+    6: 24,
+    8: 32,
+    10: 40,
+    12: 48,
+    16: 64,
+    20: 80,
+    24: 96,
+  },
+  radius: {
+    xs: 4,
+    sm: 6,
+    md: 8, // Modern Preset default
+    lg: 12,
+    xl: 16,
+    '2xl': 24,
+    pill: 9999,
+  },
+  shadows: {
+    xs: '0 1px 2px rgba(15, 23, 42, 0.04)',
+    sm: '0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04)',
+    md: '0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04)',
+    lg: '0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03)',
+    xl: '0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03)',
+    '2xl': '0 25px 50px -12px rgba(15, 23, 42, 0.16)',
+    brandGlow: '0 8px 24px -4px rgba(13, 59, 117, 0.25)',
+    emeraldGlow: '0 8px 24px -4px rgba(22, 163, 74, 0.25)',
+  },
+  typography: {
+    fontFamily: "'Plus Jakarta Sans', 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif",
+    scaleRatio: 1.25,
+  },
+};

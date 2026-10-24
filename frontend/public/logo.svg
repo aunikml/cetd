@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0D3B75" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Icon -->
+  <g transform="translate(10, 8)">
+    <!-- Tech orbit & screen pixels -->
+    <rect x="75" y="16" width="16" height="12" rx="2" fill="none" stroke="#22C55E" stroke-width="2"/>
+    <path d="M83 28 v4 M79 32 h8" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+    <rect x="94" y="12" width="6" height="6" rx="1" fill="#0284C7"/>
+    <rect x="102" y="16" width="5" height="5" rx="1" fill="#22C55E"/>
+    <rect x="96" y="22" width="5" height="5" rx="1" fill="#38BDF8"/>
+    
+    <!-- Globe in background -->
+    <circle cx="50" cy="38" r="26" fill="url(#cyanGrad)" opacity="0.85"/>
+    <path d="M26 38 Q50 20 74 38 Q50 56 26 38" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.6"/>
+    <path d="M50 12 Q38 38 50 64 Q62 38 50 12" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.6"/>
+    <path d="M28 28 H72 M28 48 H72" stroke="#FFFFFF" stroke-width="1.2" opacity="0.4"/>
+    
+    <!-- Student figure (center) -->
+    <circle cx="50" cy="40" r="7" fill="#0D3B75"/>
+    <path d="M38 55 C38 46 62 46 62 55" fill="#0D3B75"/>
+    
+    <!-- Open Book (foreground) -->
+    <path d="M12 75 Q48 64 50 78 Q52 64 88 75 L84 88 Q50 78 50 90 Q50 78 16 88 Z" fill="url(#blueGrad)"/>
+    <path d="M14 77 Q48 68 50 82 Q52 68 86 77 L83 87 Q50 80 50 91 Q50 80 17 87 Z" fill="url(#greenGrad)"/>
+    <path d="M50 78 V92" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- Typography Brand Text -->
+  <g transform="translate(130, 22)">
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#0D3B75" letter-spacing="-0.5">
+      Center for <tspan fill="#0284C7">EduTech</tspan>
+    </text>
+    <text x="0" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="20" fill="#15803D" letter-spacing="0.2">
+      Development and Research
+    </text>
+    <text x="0" y="78" font-family="'Inter', sans-serif" font-weight="500" font-size="11" fill="#64748B" letter-spacing="1.5">
+      TEACHER CAPACITY • PLATFORMS • RESEARCH
+    </text>
+  </g>
+</svg>

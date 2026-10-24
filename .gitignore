@@ -1,0 +1,133 @@
+# ==============================================================================
+# Git Ignore for Center for EduTech Development and Research (CEDR)
+# Full-Stack Django REST Framework + React Vite Application
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python & Django
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+backend/venv/
+backend/env/
+backend/.venv/
+env.bak/
+venv.bak/
+
+# Django Databases & Migrations cache
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Django Uploaded Media & Collected Static
+backend/media/
+media/
+backend/staticfiles/
+staticfiles/
+
+# Django Environment & Secrets
+.env
+.env.local
+*.env
+local_settings.py
+backend/.env
+backend/.env.local
+
+# Pytest / Unit Testing / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ------------------------------------------------------------------------------
+# 2. Node.js & React (Vite)
+# ------------------------------------------------------------------------------
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+dist-ssr/
+frontend/dist/
+frontend/dist-ssr/
+build/
+
+# Vite / ESLint / Temp Cache
+.eslintcache
+frontend/.eslintcache
+.stylelintcache
+
+# Node logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend local environment files
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ------------------------------------------------------------------------------
+# 3. IDE, Editor & Tooling
+# ------------------------------------------------------------------------------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio / Windows
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+
+# ------------------------------------------------------------------------------
+# 4. Operating System & System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# ------------------------------------------------------------------------------
+# 5. General Logs & Scratch
+# ------------------------------------------------------------------------------
+*.log
+logs/
+scratch/
+tmp/
+temp/

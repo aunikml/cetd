@@ -1,0 +1,214 @@
+/**
+ * UI Design System Tokens - Center for EduTech Development and Research (CEDR)
+ * Generated in accordance with alirezarezvani-ui-design-system specifications.
+ * Style Preset: Modern (8px base radius, layered subtle shadows, 8pt spacing grid, 1.25x type scale)
+ */
+
+:root {
+  /* ==========================================================================
+     1. COLOR SYSTEM (50 - 900 Scales)
+     ========================================================================== */
+
+  /* Primary Brand Scale (Base: #0D3B75 - Deep Royal Navy) */
+  --color-primary-50: #EEF4FC;
+  --color-primary-100: #D8E7FA;
+  --color-primary-200: #B3D2F5;
+  --color-primary-300: #7EB4EE;
+  --color-primary-400: #3E8DE2;
+  --color-primary-500: #0D3B75; /* Base Brand */
+  --color-primary-600: #092B57;
+  --color-primary-700: #072042;
+  --color-primary-800: #051832;
+  --color-primary-900: #030F20;
+  --color-primary-contrast: #FFFFFF;
+
+  /* Secondary Accent Scale (Base: #16A34A - Emerald Green) */
+  --color-secondary-50: #EDFAF1;
+  --color-secondary-100: #D7F4E1;
+  --color-secondary-200: #B0E9C5;
+  --color-secondary-300: #78D99E;
+  --color-secondary-400: #3CC274;
+  --color-secondary-500: #16A34A; /* Base Secondary */
+  --color-secondary-600: #11813A;
+  --color-secondary-700: #0D632D;
+  --color-secondary-800: #0A4A22;
+  --color-secondary-900: #063116;
+  --color-secondary-contrast: #FFFFFF;
+
+  /* Tech Cyan Accent Scale (Base: #0284C7 - Tech Cyan) */
+  --color-accent-50: #EFF8FF;
+  --color-accent-100: #DFEFFE;
+  --color-accent-200: #B9DFFD;
+  --color-accent-300: #7CC4FA;
+  --color-accent-400: #38A6F6;
+  --color-accent-500: #0284C7; /* Base Tech Accent */
+  --color-accent-600: #026AA0;
+  --color-accent-700: #02527C;
+  --color-accent-800: #023D5C;
+  --color-accent-900: #01283D;
+  --color-accent-contrast: #FFFFFF;
+
+  /* Neutral Slate Scale */
+  --color-neutral-50: #F8FAFC;
+  --color-neutral-100: #F1F5F9;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E1;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-500: #64748B;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1E293B;
+  --color-neutral-900: #0F172A;
+  --color-neutral-950: #020617;
+
+  /* Semantic Alerts */
+  --color-success: #16A34A;
+  --color-success-bg: #EDFAF1;
+  --color-warning: #D97706;
+  --color-warning-bg: #FFFBEB;
+  --color-error: #DC2626;
+  --color-error-bg: #FEF2F2;
+  --color-info: #0284C7;
+  --color-info-bg: #EFF8FF;
+
+  /* Surface & Background */
+  --color-surface-bg: #F8FAFC;
+  --color-surface-card: #FFFFFF;
+  --color-surface-subtle: #F1F5F9;
+  --color-surface-dark: #0A192F;
+  --color-border-subtle: #E2E8F0;
+  --color-border-default: #CBD5E1;
+
+  /* ==========================================================================
+     2. 8-POINT SPACING GRID SYSTEM
+     ========================================================================== */
+  --space-0: 0px;
+  --space-1: 4px;   /* 0.5 * 8pt */
+  --space-2: 8px;   /* 1 * 8pt (base unit) */
+  --space-3: 12px;  /* 1.5 * 8pt */
+  --space-4: 16px;  /* 2 * 8pt */
+  --space-5: 20px;  /* 2.5 * 8pt */
+  --space-6: 24px;  /* 3 * 8pt */
+  --space-8: 32px;  /* 4 * 8pt */
+  --space-10: 40px; /* 5 * 8pt */
+  --space-12: 48px; /* 6 * 8pt */
+  --space-16: 64px; /* 8 * 8pt */
+  --space-20: 80px; /* 10 * 8pt */
+  --space-24: 96px; /* 12 * 8pt */
+
+  /* Responsive Spacing per Skill Workflow 3 */
+  --space-section: clamp(48px, 6vw, 96px);
+  --space-card: clamp(16px, 2vw, 32px);
+  --space-gutter: clamp(16px, 3vw, 32px);
+
+  /* ==========================================================================
+     3. TYPOGRAPHY SYSTEM (1.25x Major Third Ratio & Fluid Clamps)
+     ========================================================================== */
+  --font-family-sans: 'Plus Jakarta Sans', 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  /* 1.25x Scale */
+  --text-xs: 0.625rem;   /* 10px */
+  --text-sm: 0.8125rem;  /* 13px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.5625rem;  /* 25px */
+  --text-2xl: 1.9375rem; /* 31px */
+  --text-3xl: 2.4375rem; /* 39px */
+  --text-4xl: 3.0625rem; /* 49px */
+  --text-5xl: 3.8125rem; /* 61px */
+
+  /* Fluid Typography Formulas (Skill Workflow 3) */
+  --fluid-h1: clamp(2rem, 1rem + 3.6vw, 3.8125rem);
+  --fluid-h2: clamp(1.75rem, 1rem + 2.3vw, 2.75rem);
+  --fluid-h3: clamp(1.375rem, 1rem + 1.4vw, 2rem);
+  --fluid-h4: clamp(1.15rem, 0.95rem + 0.8vw, 1.5rem);
+  --fluid-body: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --fluid-caption: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
+
+  /* Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* Line Heights */
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ==========================================================================
+     4. BORDERS & RADIUS (Modern Preset: 8px default)
+     ========================================================================== */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;   /* Default Modern Preset per Skill */
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+
+  /* ==========================================================================
+     5. SHADOWS (Layered, Subtle Modern Shadows)
+     ========================================================================== */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+  --shadow-2xl: 0 25px 50px -12px rgba(15, 23, 42, 0.16);
+  --shadow-brand-glow: 0 8px 24px -4px rgba(13, 59, 117, 0.25);
+  --shadow-emerald-glow: 0 8px 24px -4px rgba(22, 163, 74, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(15, 23, 42, 0.06);
+
+  /* ==========================================================================
+     6. COMPONENT SIZING (Skill Workflow 2: sm, md, lg)
+     ========================================================================== */
+  /* Buttons */
+  --btn-height-sm: 32px;
+  --btn-padding-sm: 6px 12px;
+  --btn-font-sm: 0.8125rem;
+
+  --btn-height-md: 40px;
+  --btn-padding-md: 8px 16px;
+  --btn-font-md: 0.9375rem;
+
+  --btn-height-lg: 48px;
+  --btn-padding-lg: 12px 24px;
+  --btn-font-lg: 1rem;
+
+  /* Inputs */
+  --input-height-md: 40px;
+  --input-height-lg: 48px;
+
+  /* Icons */
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --icon-xl: 32px;
+
+  /* ==========================================================================
+     7. ANIMATION & MOTION TOKENS
+     ========================================================================== */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-relaxed: 600ms;
+
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ==========================================================================
+     8. ACCESSIBILITY & FOCUS RINGS (WCAG AA Compliance)
+     ========================================================================== */
+  --focus-ring: 0 0 0 3px rgba(13, 59, 117, 0.35);
+  --focus-ring-offset: 2px;
+  --min-touch-target: 44px;
+}

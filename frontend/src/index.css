@@ -1,0 +1,102 @@
+@import './styles/design-tokens.css';
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface-bg);
+  color: var(--color-neutral-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: var(--leading-normal);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Accessible focus ring per WCAG AA */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Interactive elements min touch target for touch screens */
+@media (pointer: coarse) {
+  button, a, input, select, textarea {
+    min-height: var(--min-touch-target);
+  }
+}
+
+/* Custom scrollbars with design tokens */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-300);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-400);
+}
+
+/* Typography Utility Classes */
+.fluid-h1 {
+  font-size: var(--fluid-h1);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-extrabold);
+  letter-spacing: -0.025em;
+}
+
+.fluid-h2 {
+  font-size: var(--fluid-h2);
+  line-height: var(--leading-snug);
+  font-weight: var(--font-bold);
+  letter-spacing: -0.02em;
+}
+
+.fluid-h3 {
+  font-size: var(--fluid-h3);
+  line-height: var(--leading-snug);
+  font-weight: var(--font-bold);
+  letter-spacing: -0.015em;
+}
+
+.fluid-body {
+  font-size: var(--fluid-body);
+  line-height: var(--leading-normal);
+}
+
+/* Section Container Utilities following 8pt Spacing */
+.section-padding {
+  padding-top: var(--space-section);
+  padding-bottom: var(--space-section);
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(10, 25, 47, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
